@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh_CN" style="font-size: 50px;">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>make pic</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+    <script>
+	    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+	    window.onresize = function () {
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+	    };
+    </script>
+</head>
+<body>
+	<div class="game-bg">
+		<div class="game-wrapper" id="gameWrapper">
+			<canvas id="draw" class="draw" width="333" height="563"></canvas>
+		</div>
+		<div class="getPicBtn" id="getPicBtn">完成</div>
+	</div>
+	<div class="imgwrapper">
+		<img id="img" src="">
+	</div>
+	<!-- 真机输出页面信息 -->
+	<div class="showJsVal" id="showJsVal"></div>
+</body>
+</html>
+<script src="plug/jquery-2.1.4.min.js"></script>
+<script src="plug/easeljs-0.8.2.min.js"></script>
+<script src="plug/tweenjs-0.6.2.min.js"></script>
+<script src="plug/soundjs-0.6.2.min.js"></script>
+<script src="plug/preloadjs-0.6.2.min.js"></script>
+<script src="plug/touch-0.2.14.js"></script>
+<script src="js/index.js"></script>

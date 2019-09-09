@@ -1,0 +1,190 @@
+html,body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: none;
+	background-color: #ffffff;
+	background-size: 100% 100%;
+}
+.clearfloat:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.fl { float: left; }
+.fr { float: right; }
+.center { margin: 0 auto; }
+.img-block { display: block; width: 100%; }
+@font-face {
+	font-family: newFont;
+	/*src: url('../font/ArabBrushstrokeLTStd.otf')*/
+}
+.game-bg{
+	width: 100%;
+	height: 100%;
+	padding: 0.7rem 0.08rem 0 0.08rem;
+	background-color: #f0adea;
+	box-sizing: border-box;
+}
+.game-wrapper{
+    display: flex;
+    justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #00acec;
+}
+.draw{
+    margin-top: 0.3rem;
+	width: 333px;
+	height: 563px;
+	background-color: #ffffff;
+}
+.getPicBtn{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 30px;
+    color: orange;
+    font-size: 0.35rem;
+    text-align: center;
+}
+.imgwrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+
+.showJsVal{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 100;
+    width: 1.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background-color: orange;
+    color: #000000;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.se-role1, .se-role3{
+	animation: transMove1 .3s linear 1 forwards;
+}
+.se-role2 {
+	animation: transMove2 .3s linear 1 forwards;
+}
+.se-role1 {
+	animation-delay: .2s;
+}
+.se-role2 {
+	animation-delay: .6s;
+}
+.se-role3 {
+	animation-delay: 1s;
+}
+/* 动画帧 */
+/* 气球 */
+@keyframes transRotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    17% {
+        transform: rotateZ(1deg);
+    }
+    34% {
+        transform: rotateZ(1.5deg);
+    }
+    51% {
+        transform: rotateZ(3deg);
+    }
+    68% {
+        transform: rotateZ(1.5deg);
+    }
+    85% {
+    	transform: rotateZ(1deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+/* 按钮 */
+@keyframes transScale {
+    0% {
+        transform: scale(1, 1);
+    }
+    17% {
+        transform: scale(1.05, 1.05);
+    }
+    34% {
+        transform: scale(1.1, 1.1);
+    }
+    51% {
+        transform: scale(1.15, 1.15);
+    }
+    68% {
+        transform: scale(1.1, 1.1);
+    }
+    85% {
+    	transform: scale(1.05, 1.05);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+/* select */
+@keyframes transMove1 {
+    0%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(6.55rem);
+        -webkit-transform: translateX(6.55rem);
+    }
+}
+@keyframes transMove2 {
+    0%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-6.59rem);
+        -webkit-transform: translateX(-6.59rem);
+    }
+}

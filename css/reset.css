@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+
+/*============================== 
+	CSS RESET
+================================= */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,input,select{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    /*background: #fff;*/
+    -webkit-overflow-scrolling:touch;
+    -webkit-text-size-adjust: none;
+}
+ol, ul,li,dl,dt,dd{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: none;
+}
+a,a:hover,a:active,a:focus {
+    outline: none;
+    text-decoration: none;
+}
+*{
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input,select,textarea{
+	border: 0;
+	outline: 0;
+    vertical-align: middle;
+    -webkit-appearance: none;
+        
+}
+input[type="text"]{
+        background-position-y:-1px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hide from IE Mac \*/ 
+.clearfix{
+	display: block;
+        zoom:1;
+}
+/* End hide from IE Mac */ 
+.none {
+	display: none;
+}
+/* End Clearfix */
+@media screen and(max-device-width: 320px){
+    body{
+        -webkit-text-size-adjust: none;
+    }
+}
+@media screen and(max-device-width: 480px){
+    body{
+        -webkit-text-size-adjust: none;
+    }
+}
+@media only screen and(-webkit-min-device-pixel-ratio: 2){
+    body{
+        -webkit-text-size-adjust: none;
+    }
+}
+@media only screen and(min-device-width: 768px) and(max-device-width: 1024px){
+    body{
+        -webkit-text-size-adjust: none;
+    }
+}
+/*文字处理样式*/
+.text-nowrap{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*换行*/
+.word-break{word-break: break-all; word-wrap:break-word;}
